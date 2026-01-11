@@ -1,0 +1,82 @@
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 60%;
+}
+
+.about-content .all-team {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+
+  margin-bottom: 100px;
+}
+
+.about-content .card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin-top: 100px;
+}
+
+.about-content .card-container .equipe-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 20%;
+  min-width: 180px;
+}
+
+.about-content .card-container .equipe-card .equipe-img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.about-content .card-container .equipe-card .equipe-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+@media (max-width: 1250px) {
+  .about-content {
+    width: 75%;
+  }
+
+  .about-content .card-container {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 675px) {
+  .about-content {
+    width: 90%;
+  }
+
+  .about-content .all-team {
+    margin-bottom: 50px;
+  }
+
+  .about-content .card-container {
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .about-content .card-container .equipe-card {
+    width: 100%;
+    max-width: 300px;
+    min-width: none;
+  }
+}

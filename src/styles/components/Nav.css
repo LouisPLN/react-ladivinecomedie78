@@ -1,0 +1,178 @@
+#Header-Nav {
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#Header-Nav #Nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 60%;
+  height: 68px;
+}
+
+.Nav-Logo-Wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 68px;
+}
+
+#Nav #Nav-Logo {
+  height: 55px;
+}
+
+#Nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+
+  margin-left: 50px;
+}
+
+#Nav ul li a {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+  color: #000;
+  font-family: "gilroy-semibold";
+  text-decoration: none;
+}
+
+#Nav ul li a:hover {
+  color: #2d54de !important;
+}
+
+#Nav ul li a.active-link {
+  color: #2d54de !important;
+  text-decoration: underline;
+}
+
+/* Styles for mobile navigation */
+#PhoneNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 68px;
+
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#PhoneNav .phone-content {
+  z-index: 9999;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+#PhoneNav ul {
+  z-index: 99;
+  visibility: hidden;
+
+  position: absolute;
+  top: -100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 100%;
+
+  padding: 10px;
+
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: all, transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+#PhoneNav ul.open {
+  visibility: visible;
+  transform: translateY(135px);
+  opacity: 1;
+}
+
+#PhoneNav ul.closing {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+#PhoneNav #Nav-Logo {
+  height: 50px;
+}
+
+#PhoneNav #BurgerButton {
+  z-index: 10000;
+  position: fixed;
+  left: 25px;
+
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#PhoneNav #BurgerButton.open {
+  color: #2d54de;
+}
+
+#PhoneNav ul li a {
+  text-align: left;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.1px;
+  color: #000;
+  font-family: "gilroy-semibold";
+  text-decoration: none;
+}
+
+#PhoneNav ul li a:hover {
+  color: #2d54de !important;
+}
+
+#PhoneNav ul li a.active-link {
+  color: #2d54de !important;
+  text-decoration: underline;
+}
+
+/* Media query to show PhoneNav and hide Nav on small screens */
+@media (max-width: 1250px) {
+  #Header-Nav #Nav {
+    display: none;
+  }
+
+  #Header-Nav #PhoneNav {
+    display: block;
+  }
+}

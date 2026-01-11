@@ -1,0 +1,120 @@
+.section-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.section-review ul {
+  position: relative;
+  width: 90%;
+  height: 225px;
+  max-width: 1920px;
+
+  margin-inline: auto;
+  overflow: hidden;
+
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.section-review ul li {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px;
+  width: 350px;
+  min-height: 225px;
+
+  background: #fff;
+  border: 1px solid #e7e9ed;
+  border-radius: 10px;
+
+  left: max(calc(350px * 6), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.section-review ul li .review-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+.section-review ul li .review-content .top-review {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.section-review ul li .review-content .top-review .review-profile  {
+  height: 50px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.section-review ul li .review-content .top-review h6 {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.section-review ul li .review-content .top-review .review-stars {
+  margin-top: 2px;
+  height: 15px;
+}
+
+.section-review ul li .review-content p {
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  opacity: 75%;
+}
+
+.section-review ul li[id="review-1"] {
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.section-review ul li[id="review-2"] {
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.section-review ul li[id="review-3"] {
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.section-review ul li[id="review-4"] {
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.section-review ul li[id="review-5"] {
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.section-review ul li[id="review-6"] {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -300px;
+  }
+}

@@ -1,0 +1,86 @@
+#social-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    max-width: 1920px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#social-card .social-card-container {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+#social-card .youtube {
+    background: linear-gradient(-74.361deg, #D63B19 0%, #E61862 52%, #F77D25 100%);
+    border: 1px solid #ff0000;
+}
+
+#social-card .facebook {
+    background: linear-gradient(-135deg, #FF7061 0%, #A033FF 51%, #0099FF 100%), linear-gradient(-74.361deg, #D63B19 0%, #E61862 52%, #F77D25 100%);
+    border: 1px solid #0072ff;
+}
+
+#social-card .social-card-content {
+    z-index: 5;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    padding: 30px;
+}
+
+#social-card .social-card-content .bg-text {
+    z-index: -2;
+    position: absolute;
+    top: -300px;
+    left: -20px;
+    width: 120%;
+    opacity: 0.1;
+}
+
+#social-card .social-card-content .logo-fb {
+    z-index: -1;
+    position: absolute;
+    opacity: 0.25;
+    width: 90%;
+    filter: blur(8px);
+}
+
+#social-card .social-card-content .logo-yt {
+    z-index: -1;
+    position: absolute;
+    opacity: 0.25;
+    width: 90%;
+    filter: blur(8px);
+}
+
+@media (max-width: 1250px) {
+    #social-card .social-card-container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 675px) {
+    #social-card .social-card-container {
+        width: 90%;
+    }
+}

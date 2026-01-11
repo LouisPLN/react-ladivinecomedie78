@@ -1,0 +1,123 @@
+#HeadBanner {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  padding-top: 68px;
+}
+
+#HeadBanner .hero-banner {
+  z-index: 0;
+  object-fit: cover;
+  width: 100%;
+  min-height: 700px;
+}
+
+#HeadBanner .hero-banner-tablet {
+  display: none;
+}
+
+#HeadBanner .hero-banner-phone {
+  display: none;
+}
+
+#HeadBanner .hero-content {
+  z-index: 1;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  width: 60%;
+}
+
+#HeadBanner .hero-title {
+  font-size: 64px;
+  text-align: left;
+  letter-spacing: -2px;
+  line-height: 65px;
+}
+
+#HeadBanner .hero-paragraph {
+  margin: 30px 0;
+  width: 50%;
+
+  opacity: 75%;
+  font-size: 19px;
+  text-align: justify;
+  letter-spacing: -0.2px;
+  line-height: 32px;
+}
+
+@media (max-width: 1450px) {
+  #HeadBanner .hero-paragraph {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1250px) {
+  #HeadBanner .hero-banner {
+    display: none;
+  }
+
+  #HeadBanner .hero-banner-tablet {
+    display: block;
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    min-height: 700px;
+  }
+
+  #HeadBanner .hero-content {
+    width: 75%;
+  }
+
+  #HeadBanner .hero-paragraph {
+    width: 80%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 850px) {
+  #HeadBanner .hero-title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  #HeadBanner .hero-banner-tablet {
+    display: none;
+  }
+
+  #HeadBanner .hero-banner-phone {
+    display: block;
+    z-index: 0;
+    object-fit: cover;
+    width: 100%;
+    min-height: 700px;
+  }
+
+  #HeadBanner .hero-content {
+    width: 90%;
+  }
+
+  #HeadBanner .hero-title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  #HeadBanner .hero-paragraph {
+    width: 90%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

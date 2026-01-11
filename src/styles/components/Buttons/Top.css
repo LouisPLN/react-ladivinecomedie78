@@ -1,0 +1,41 @@
+.top-button {
+  z-index: 999999;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d54de;
+  border-radius: 10px;
+  border: 0;
+  box-shadow:
+    rgba(1, 60, 136, 0.5) 0 -1px 3px 0 inset,
+    rgba(0, 44, 97, 0.1) 0 3px 6px 0;
+  cursor: pointer;
+  padding: 14px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.top-button:hover {
+  background-color: #2544b4;
+  transform: translateY(-2px);
+}
+
+.top-button img {
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 1250px) {
+  .top-button {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+}

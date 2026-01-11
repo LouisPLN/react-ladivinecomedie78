@@ -1,0 +1,82 @@
+.About-Image {
+  z-index: 1;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.Circles {
+  z-index: 0;
+  position: absolute;
+  right: -80px;
+  top: -80px;
+}
+
+.Comedy-Image {
+  z-index: 1;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.cours-adultes {
+  z-index: 1;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.section-minilink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin-top: 25px;
+}
+
+.section-minilink .content-minilink {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  width: 270px;
+  padding-top: 25px;
+}
+
+.aya-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  padding: 50px 0;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.aya-container .thumbs-wrapper {
+  display: none;
+}
+
+@media (max-width: 1250px) {
+  .aya-container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 675px) {
+  .aya-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 850px) {
+  .Circles {
+    z-index: 0;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    width: 300px;
+  }
+}

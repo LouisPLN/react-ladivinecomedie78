@@ -1,0 +1,44 @@
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 24px;
+  width: 500px;
+  min-height: 225px;
+
+  background: #fff;
+  border: 1px solid #e7e9ed;
+  border-radius: 10px;
+}
+
+.emailForm input { 
+    padding: 12px 16px;
+    width: 100%;
+  
+    background: #fff;
+    border: 1px solid #e7e9ed;
+    border-radius: 10px;
+}
+
+.emailForm textarea { 
+    padding: 12px 16px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+  
+    background: #fff;
+    border: 1px solid #e7e9ed;
+    border-radius: 10px;
+}
+
+@media (max-width: 1250px) {
+
+  .emailForm {
+    padding: 0;
+    max-width: 500px;
+    border: none;
+  }
+}
