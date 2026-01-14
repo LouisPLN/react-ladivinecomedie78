@@ -3,27 +3,28 @@ import USPP from "./assets/images/a-la-une.jpg";
 import LAPER from "./assets/images/laperruche.png";
 import ZORRO from "./assets/images/zorro.jpg";
 import MARG from "./assets/images/margarita.jpg";
+import OUI from "./assets/images/oui!_31_01_25_page-0001.jpg"
 
 export const REPRESENTATIONS = [
-  {
-    date: "3 Octobre 2025 - à 20h30",
-    location: "Saint-Cyr L'école - 78",
-    eventName: "Festival Mort de Rire - Théatre Gérard Philipe",
-    piecePlayed: "La Perruche",
-    image: LAPER,
+  // {
+  //   date: "31 Janvier 2026 - à 20h30",
+  //   location: "Saint-Cyr L'école - 78",
+  //   eventName: "Théatre Gérard Philipe",
+  //   piecePlayed: "Oui !",
+  //   image: OUI,
+  // },
+    {
+    date: "7 Février 2026 - à 20h00",
+    location: "Saint-Marcellin - 38",
+    eventName: "Entr'actes à St Marce - Le Diapason",
+    piecePlayed: "Une semaine... Pas plus !",
+    image: USPP,
   },
     {
-    date: "4 Octobre 2025 - à 20h30",
-    location: "Saint-Cyr L'école - 78",
-    eventName: "Festival Mort de Rire - Théatre Gérard Philipe",
-    piecePlayed: "Des nouvelles de Zorro",
-    image: ZORRO,
-  },
-    {
-    date: "5 Octobre 2025 - à 16h00",
-    location: "Saint-Cyr L'école - 78",
-    eventName: "Festival Mort de Rire - Théatre Gérard Philipe",
-    piecePlayed: "Redoutable Margarita",
-    image: MARG,
+    date: "11 Avril 2026",
+    location: "Vic-sur-Cère - 15",
+    eventName: "Théatre Fet'Art",
+    piecePlayed: "Oui !",
+    image: OUI,
   },
 ];
