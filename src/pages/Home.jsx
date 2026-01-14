@@ -13,6 +13,7 @@ import LogoFB from "../assets/images/logo-fb.svg";
 import LogoYT from "../assets/images/logo-yt.svg";
 import BgText from "../assets/images/bg-textures.svg";
 import LAPER from "../assets/images/laperruche.png";
+import OUI from "../assets/images/oui!_31_01_25_page-0001.jpg"
 
 import HeadBanner from "../components/HeadBanner";
 import Information from "../components/Information";
@@ -35,9 +36,25 @@ const Home = () => {
       <HeadBanner />
       <Information />
       <div className="aya-container">
-        <H2>A la une !</H2>
-        <Subtitle></Subtitle>
-        <CarouselFest />
+        <H2>MERCI !</H2>
+        <Subtitle>
+          Après <strong>dix années de rires</strong>, de partage et de convivialité, <strong>le festival
+          Mort de Rire</strong>, porté par <strong>la Divine Comédie</strong>, tire aujourd’hui sa
+          révérence.
+          <br></br>
+          Nous avons été profondément heureux de vous accueillir tout au long de
+          ces belles années sur les planches du TGP, et de vivre avec vous <strong>tant
+          de moments de théâtre, d’émotion et de joie.</strong>
+          <br></br>
+          Nous espérons que nos chemins se croiseront à nouveau, ici ou
+          ailleurs, pour d’autres aventures artistiques.
+          <br></br>
+          Un <strong>immense merci</strong> à notre public fidèle et une belle continuation à
+          toutes les troupes qui ont fait vivre le festival au fil des éditions.
+          <br></br>
+          <strong>Vive le théâtre, et à très bientôt.</strong>
+        </Subtitle>
+        {/* <CarouselFest /> */}
       </div>
       <Section
         children={
@@ -94,7 +111,7 @@ const Home = () => {
           <>
             <img
               className="Comedy-Image"
-              src={LAPER}
+              src={OUI}
               loading="lazy"
               alt="Vu d'une scène de théatre"
             />
@@ -103,18 +120,23 @@ const Home = () => {
         childrenThree={
           <>
             <H3>
-              “La Perruche” par L'enjouée Compagnie de{" "}
-              <span className="text-blue font-bold">Maisons-Laffitte</span>
+              “Oui !” une pièce de{" "}
+              <span className="text-blue font-bold">Pascal Rocher</span>
             </H3>
             <Paragraph>
-              Synopsis : Un couple attend des amis pour dîner, mais ceux-ci ne viendront
-              jamais. Ce contretemps anodin déclenche un affrontement aussi
-              drôle que mordant. Entre confidences piquantes, révélations
+              Synopsis : Après 8 ans de vie commune, Valérie et Stéphane font
+              appel à une wedding planner pour organiser leur mariage car ils
+              ont enfin décidé de se dire Oui ! Les dialogues modernes et
+              irrésistibles font mouche, les bons mots fusent, les répliques
+              sont tracées au cordeau, l’énergie contagieuse.
+              {/* Synopsis : Un couple attend des amis pour dîner, mais ceux-ci ne
+              viendront jamais. Ce contretemps anodin déclenche un affrontement
+              aussi drôle que mordant. Entre confidences piquantes, révélations
               intimes et quiproquos absurdes, la soirée tourne au duel explosif.
               Chacun accepte de se dire toute la vérité alors qu’aucun n’est
               prêt à l’entendre. Une comédie grinçante et intelligente qui
               explore, avec sensibilité et humour, les tourments éternels du
-              couple et de l’amour.
+              couple et de l’amour. */}
               {/* Synopsis : A l'occasion de ses 30 ans, Alexandre souhaite demander
               à ses parents d'être les témoins de son mariage.<br></br>
               Son père, animateur de télé parisien, et sa mère, femme au foyer
@@ -144,18 +166,18 @@ const Home = () => {
                   source={IconSave}
                   children={"Réservation en ligne"}
                   childrenTwo={
-                    "Réservez votre place en ligne en cliquant sur le bouton."
+                    // "Réservez votre place en ligne en cliquant sur le bouton."
                     // "Billetterie et réservations : 02 35 74 05 32"
-                    // "Billetterie sur place. 10 € & 5 € pour les -12 ans"
+                    "Billetterie sur place."
                   }
                 />
                 <div>
-                  <Linker
+                  {/* <Linker
                     to="https://www.billetweb.fr/festival-mort-de-rire-2025"
                     target={"_blank"}
                   >
                     Réserver votre place
-                  </Linker>
+                  </Linker> */}
                 </div>
               </div>
             </div>

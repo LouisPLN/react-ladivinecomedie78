@@ -18,6 +18,7 @@ import IconSave from "../assets/images/icon-save.svg";
 import Affiche from "../assets/images/dinerdefamille.JPG";
 import LAPER from "../assets/images/laperruche.png";
 // import Affiche from "../assets/images/a-la-une.jpg";
+import OUI from "../assets/images/oui!_31_01_25_page-0001.jpg"
 import * as motion from "motion/react-client";
 import CarouselRep from "../components/Divers/Carousel";
 import CarouselSoon from "../components/Divers/CarouselSoon";
@@ -83,23 +84,20 @@ const Comedy = () => {
             whileInView="animate"
             viewport={{ once: true }}
           >
-            <H3>“La Perruche”</H3>
+            <H3>“Oui !”</H3>
             <Paragraph>
-              Synopsis : Un couple attend des amis pour dîner, mais ceux-ci ne
-              viendront jamais. Ce contretemps anodin déclenche un affrontement
-              aussi drôle que mordant. Entre confidences piquantes, révélations
-              intimes et quiproquos absurdes, la soirée tourne au duel explosif.
-              Chacun accepte de se dire toute la vérité alors qu’aucun n’est
-              prêt à l’entendre. Une comédie grinçante et intelligente qui
-              explore, avec sensibilité et humour, les tourments éternels du
-              couple et de l’amour.
+              Synopsis : Après 8 ans de vie commune, Valérie et Stéphane font
+              appel à une wedding planner pour organiser leur mariage car ils
+              ont enfin décidé de se dire Oui ! Les dialogues modernes et
+              irrésistibles font mouche, les bons mots fusent, les répliques
+              sont tracées au cordeau, l’énergie contagieuse.
             </Paragraph>
             <div className="content-minilink">
               <MiniLink
                 source={IconPin}
                 children={"Lieu de la représentation"}
                 childrenTwo={
-                  "Au Festival Mort de Rire - Théatre Gérard Philipe"
+                  "Théatre Gérard Philipe"
                 }
               />
             </div>
@@ -107,7 +105,7 @@ const Comedy = () => {
               <MiniLink
                 source={IconProg}
                 children={"Date de la représentation"}
-                childrenTwo={"Le 3 Octobre 2025 - à 20h30"}
+                childrenTwo={"Le 31 Janvier 2026 - à 20h30"}
               />
             </div>
             <div className="content-minilink">
@@ -116,22 +114,22 @@ const Comedy = () => {
                 children={"Réservation sur place"}
                 childrenTwo={
                   // "Billetterie et réservations : 02 35 74 05 32"
-                  "Réservez votre place en ligne. 1€ moins chère que sur place."
-                  // "Billetterie sur place. 10 € & 5 € pour les -12 ans"
+                  // "Réservez votre place en ligne. 1€ moins chère que sur place."
+                  "Billetterie sur place."
                 }
               />
             </div>
             <div className="hr"></div>
-            <CTA
+            {/* <CTA
               to="https://www.billetweb.fr/festival-mort-de-rire-2025"
               target={"_blank"}
             >
               Réserver votre place
-            </CTA>
+            </CTA> */}
           </motion.div>
           <motion.img
             className="rightSide"
-            src={LAPER}
+            src={OUI}
             loading="lazy"
             alt="Vu d'une scène de théatre"
             variants={FadeInRightAnimationVariants}
