@@ -13,7 +13,7 @@ import LogoFB from "../assets/images/logo-fb.svg";
 import LogoYT from "../assets/images/logo-yt.svg";
 import BgText from "../assets/images/bg-textures.svg";
 import LAPER from "../assets/images/laperruche.png";
-import OUI from "../assets/images/oui!_31_01_25_page-0001.jpg"
+import OUI from "../assets/images/oui!_31_01_25_page-0001.jpg";
 
 import HeadBanner from "../components/HeadBanner";
 import Information from "../components/Information";
@@ -38,19 +38,20 @@ const Home = () => {
       <div className="aya-container">
         <H2>MERCI !</H2>
         <Subtitle>
-          Après <strong>dix années de rires</strong>, de partage et de convivialité, <strong>le festival
-          Mort de Rire</strong>, porté par <strong>la Divine Comédie</strong>, tire aujourd’hui sa
-          révérence.
+          Après <strong>dix années de rires</strong>, de partage et de
+          convivialité, <strong>le festival Mort de Rire</strong>, porté par{" "}
+          <strong>la Divine Comédie</strong>, tire aujourd’hui sa révérence.
           <br></br>
           Nous avons été profondément heureux de vous accueillir tout au long de
-          ces belles années sur les planches du TGP, et de vivre avec vous <strong>tant
-          de moments de théâtre, d’émotion et de joie.</strong>
+          ces belles années sur les planches du TGP, et de vivre avec vous{" "}
+          <strong>tant de moments de théâtre, d’émotion et de joie.</strong>
           <br></br>
           Nous espérons que nos chemins se croiseront à nouveau, ici ou
           ailleurs, pour d’autres aventures artistiques.
           <br></br>
-          Un <strong>immense merci</strong> à notre public fidèle et une belle continuation à
-          toutes les troupes qui ont fait vivre le festival au fil des éditions.
+          Un <strong>immense merci</strong> à notre public fidèle et une belle
+          continuation à toutes les troupes qui ont fait vivre le festival au
+          fil des éditions.
           <br></br>
           <strong>Vive le théâtre, et à très bientôt.</strong>
         </Subtitle>
@@ -189,19 +190,16 @@ const Home = () => {
         childrenTwo={
           <>
             <H3>
-              De l'école à la{" "}
-              <span className="text-blue font-bold">scène:</span> Découvrez nos
-              cours de théâtre.
+              De l'école à la <span className="text-blue font-bold">scène</span>
             </H3>
             <Paragraph>
-              Découvrez l'art du théâtre à travers nos cours à Saint-Cyr,
-              ouverts à tous les niveaux et tous les âges. Encadrés par des
-              professionnels passionnés, nos ateliers vous invitent à explorer
-              le jeu d'acteur et à cultiver votre confiance en vous.
-              <br></br>Rejoignez-nous pour un voyage captivant au cœur de
-              l'expression théâtrale.
+              Les cours de théâtre sont retransmis aux Tréteaux de Saint-Cyr,
+              présidés par <span className="font-bold">Martine Calabro</span>. 
+              <br></br>
+              Pour plus d’informations, vous
+              pouvez les contacter à l’adresse suivante :
+              <span className="text-blue font-bold"> treteauxdesaintcyr@gmail.com.</span>
             </Paragraph>
-            <Linker to="/nos-cours">Découvrir les cours de théatre</Linker>
           </>
         }
         childrenThree={

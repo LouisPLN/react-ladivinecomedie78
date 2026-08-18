@@ -97,7 +97,7 @@ const Comedy = () => {
                 source={IconPin}
                 children={"Lieu de la représentation"}
                 childrenTwo={
-                  "Théatre Gérard Philipe"
+                  "Ronde des théâtres - Les Essarts-le-Roi - 78"
                 }
               />
             </div>
@@ -105,7 +105,7 @@ const Comedy = () => {
               <MiniLink
                 source={IconProg}
                 children={"Date de la représentation"}
-                childrenTwo={"Le 31 Janvier 2026 - à 20h30"}
+                childrenTwo={"Le 24 Octobre 2026 - à 20h30"}
               />
             </div>
             <div className="content-minilink">
