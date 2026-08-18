@@ -42,14 +42,14 @@ const Nav = () => {
               Nos représentations
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/nos-cours"
               className={({ isActive }) => (isActive ? "active-link" : "")}
             >
               Nos cours
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/a-propos-de-nous"
@@ -103,7 +103,7 @@ const Nav = () => {
               Nos représentations
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/nos-cours"
               className={({ isActive }) => (isActive ? "active-link" : "")}
@@ -111,7 +111,7 @@ const Nav = () => {
             >
               Nos cours
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               to="/a-propos-de-nous"

@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import "./styles/App.css";
 
@@ -24,11 +24,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nos-representations" element={<Comedy />} />
-        <Route path="/nos-cours" element={<Lesson />} />
+        {/* <Route path="/nos-cours" element={<Lesson />} /> */}
         <Route path="/a-propos-de-nous" element={<About />} />
         <Route path="/nous-contacter" element={<Contact />} />
         <Route path="/cgu" element={<CGU />} />
         <Route path="/politique-confidentialite" element={<PolConf />} />
+
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
       <Top />
