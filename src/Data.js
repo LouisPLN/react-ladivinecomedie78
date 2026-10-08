@@ -13,21 +13,14 @@ export const REPRESENTATIONS = [
   //   piecePlayed: "Oui !",
   //   image: OUI,
   // },
-    {
-    date: "3 Octobre 2026 - à 20h30",
-    location: "Neuvecelle - 74",
-    eventName: "Festival Neuvescène'26",
-    piecePlayed: "Une semaine... Pas plus !",
-    image: USPP,
-  },
   {
-    date: "9 Octobre 2026 - à 20h30",
-    location: "Vouillé - 86",
+    date: "9 Octobre 2026 - à 20h45",
+    location: "Latillé - 86",
     eventName: "Festi86",
     piecePlayed: "Une semaine... Pas plus !",
     image: USPP,
   },
-    {
+  {
     date: "24 Octobre 2026 - à 20h30",
     location: "Les Essarts-le-Roi - 78",
     eventName: "Ronde des théâtres",
@@ -35,11 +28,32 @@ export const REPRESENTATIONS = [
     image: OUI,
   },
   {
-    date: "8 Novembre 2026",
+    date: "6 Novembre 2026 - à 20h",
+    location: "Allainville aux Bois - 78",
+    eventName: "Festival Yvelines Théâtre",
+    piecePlayed: "Une semaine... Pas plus !",
+    image: USPP,
+  },
+  {
+    date: "7 Novembre 2026 - à 20h30",
+    location: "Gressey - 78",
+    eventName: "Festival Yvelines Théâtre",
+    piecePlayed: "Une semaine... Pas plus !",
+    image: USPP,
+  },
+  {
+    date: "8 Novembre 2026 - à 15h",
     location: "Beaumont le Roger - 27",
     eventName: "Salle Robert Fort",
     piecePlayed: "Oui !",
     image: OUI,
+  },
+  {
+    date: "14 Novembre 2026 - à 20h",
+    location: "Auffreville Brasseuil - 78",
+    eventName: "Festival Yvelines Théâtre",
+    piecePlayed: "Une semaine... Pas plus !",
+    image: USPP,
   },
   {
     date: "15 Novembre 2026",
